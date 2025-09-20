@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rutas del Metro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Listado de Rutas del Metro</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Línea</th>
+                <th>Estación Inicio</th>
+                <th>Estación Fin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="ruta : ${rutas}">
+                <td th:text="${ruta.linea}"></td>
+                <td th:text="${ruta.estacionInicio}"></td>
+                <td th:text="${ruta.estacionFin}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
