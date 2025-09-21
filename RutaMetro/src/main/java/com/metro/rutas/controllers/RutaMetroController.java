@@ -19,7 +19,7 @@ public class RutaMetroController {
             new RutaMetro("Línea C", "San Antonio", "La Aurora")
         );
     }
-
+    //obliga a que el metodo retorne una vista
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("rutas", datos());
