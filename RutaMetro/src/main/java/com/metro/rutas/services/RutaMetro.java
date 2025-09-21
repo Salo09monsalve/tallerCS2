@@ -1,10 +1,11 @@
-package com.metro.rutas;
+package com.metro.rutas.services;
 
 public class RutaMetro {
     private String linea;
     private String estacionInicio;
     private String estacionFin;
-
+    
+    
     public RutaMetro(String linea, String estacionInicio, String estacionFin) {
         this.linea = linea;
         this.estacionInicio = estacionInicio;
